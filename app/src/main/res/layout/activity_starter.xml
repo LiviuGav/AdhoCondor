@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_gradient"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Welcome Label -->
+
+        <TextView
+            android:id="@+id/welcomeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeStepGranularity="1sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/jaini_purva"
+            android:gravity="center"
+            android:text="Welcome to"
+            android:textColor="#F5F5F5"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/adhocondorLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AdhoCondor"
+            android:textSize="50sp"
+            android:textColor="#F5F5F5"
+            android:fontFamily="@font/jaini_purva"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="25sp"
+            android:autoSizeMaxTextSize="50sp"
+            android:autoSizeStepGranularity="1sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/welcomeLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Slogan Label -->
+        <TextView
+            android:id="@+id/sloganLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Instant communication, no Internet needed!"
+            android:textColor="#F5F5F5"
+            android:fontFamily="@font/jaini_purva"
+            android:gravity="center"
+            android:singleLine="true"
+            android:ellipsize="none"
+            android:textSize="21sp"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="23sp"
+            android:autoSizeStepGranularity="1sp"
+            app:layout_constraintTop_toBottomOf="@id/adhocondorLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"/>
+
+
+
+        <!-- Before You Start Label -->
+        <TextView
+            android:id="@+id/beforeyoustartLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Before you start:"
+            android:textSize="30sp"
+            android:textColor="#F5F5F5"
+            android:fontFamily="@font/jaini_purva"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="16sp"
+            android:autoSizeMaxTextSize="30sp"
+            android:autoSizeStepGranularity="1sp"
+            android:gravity="start"
+            app:layout_constraintTop_toBottomOf="@id/sloganLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="36dp"/>
+
+        <TextView
+            android:id="@+id/requirementsLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/before_start_text"
+            android:textSize="19sp"
+            android:textColor="#F5F5F5"
+            android:fontFamily="@font/jaini_purva"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="19sp"
+            android:autoSizeStepGranularity="1sp"
+            android:gravity="start"
+            app:layout_constraintTop_toBottomOf="@id/beforeyoustartLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/requirements1Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/before_start_text1"
+            android:textSize="19sp"
+            android:textColor="#F5F5F5"
+            android:fontFamily="@font/jaini_purva"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeMaxTextSize="19sp"
+            android:autoSizeStepGranularity="1sp"
+            android:gravity="start"
+            app:layout_constraintTop_toBottomOf="@id/requirementsLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="3dp"/>
+
+        <!-- Condor Image -->
+
+        <ImageView
+            android:id="@+id/condorImage"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="-40dp"
+            android:translationX="560dp"
+            android:rotationX="-20"
+            android:src="@drawable/img_condor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeLabel" />
+
+        <Button
+            android:id="@+id/discoverButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/btn_background"
+            android:fontFamily="@font/jaini_purva"
+            android:paddingLeft="20dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:text="Discover Peers"
+            android:textColor="#F5F5F5"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nicknameInput" />
+
+        <include
+            android:id="@+id/ProfilePicture"
+            layout="@layout/view_pfp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintWidth_percent="0.35"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toBottomOf="@id/requirements1Label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <EditText
+            android:id="@+id/nicknameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#6200EE"
+            android:hint="Type a nickname"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="#F5F5F5"
+            android:textColorHint="#626262"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProfilePicture" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

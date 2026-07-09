@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/editorRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- PhotoEditorView -->
+    <ja.burhanrashid52.photoeditor.PhotoEditorView
+        android:id="@+id/photoEditorView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Editor Toolbar -->
+    <LinearLayout
+        android:id="@+id/editorToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="#88000000"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <!-- Undo -->
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_undo"
+            android:contentDescription="Undo" />
+
+        <!-- Redo -->
+        <ImageButton
+            android:id="@+id/btnRedo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_redo"
+            android:contentDescription="Redo" />
+
+        <!-- Brush -->
+        <ImageButton
+            android:id="@+id/btnBrush"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_brush"
+            android:contentDescription="Brush" />
+
+        <!-- Text -->
+        <ImageButton
+            android:id="@+id/btnText"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_text"
+            android:contentDescription="Add Text" />
+
+        <!-- Emoji -->
+        <ImageButton
+            android:id="@+id/btnEmoji"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_emoji"
+            android:contentDescription="Add Emoji" />
+
+        <!-- Filter -->
+        <ImageButton
+            android:id="@+id/btnFilter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_filter"
+            android:contentDescription="Filter" />
+
+        <!-- Crop -->
+        <ImageButton
+            android:id="@+id/btnCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_crop"
+            android:contentDescription="Crop" />
+
+        <!-- Save -->
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_save"
+            android:contentDescription="Save" />
+
+    </LinearLayout>
+</FrameLayout>

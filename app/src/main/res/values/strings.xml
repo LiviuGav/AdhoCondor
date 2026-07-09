@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AdhoCondor</string>
+    <string name="before_start_text">• Make sure your <font color='#FFD700'>Wi-Fi</font> is turned on.</string>
+    <string name="before_start_text1">• Allow the app to access <font color='#FFD700'>Location</font> and <font color='#FFD700'>Nearby Devices</font> when prompted.</string>
+</resources>

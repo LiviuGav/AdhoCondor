@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AdhoCondor" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Bara de sus -->
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+
+        <!-- Bara de jos -->
+        <item name="android:navigationBarColor">@color/navigation_bar_color</item>
+
+        <!-- Textul și iconițele să fie luminoase pentru contrast -->
+        <item name="android:windowLightStatusBar">false</item> <!-- text alb -->
+        <item name="android:windowLightNavigationBar">false</item> <!-- iconițe albe -->
+
+    </style>
+</resources>
